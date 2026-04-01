@@ -1,0 +1,53 @@
+/* Dialog container */
+.dialogContent {
+  border-radius: 12px;
+  padding: 1.5rem;
+  max-width: 480px;
+}
+
+.dialogTitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+/* Cada seção */
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.section:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.section h2 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #2d2d2d;
+}
+
+.section p {
+  font-size: 0.875rem;
+  color: #555;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Trigger */
+.trigger {
+  font-size: 0.85rem;
+  color: #888;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.2s;
+}
+
+.trigger:hover {
+  color: #444;
+}

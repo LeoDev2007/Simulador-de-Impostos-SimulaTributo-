@@ -1,0 +1,94 @@
+.form {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+}
+
+.input {
+  padding: 1rem;
+  box-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.25);
+}
+
+.label {
+  color: #c81616;
+  font-family: "Poppins", sans-serif;
+  font-size: .9375rem;
+}
+
+.selectDiv{
+  display: flex;
+  flex-direction: column;
+}
+
+.checkboxContainer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.checkboxContainer input {
+  display: none;
+}
+
+
+.checkmark {
+  width: 18px;
+  height: 18px;
+  border: 2px solid #999;
+  border-radius: 4px;
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+.checkboxContainer input:checked + .checkmark {
+  background-color: #ff3b3b;
+  border-color: #ff3b3b;
+}
+
+.checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+
+.checkboxContainer input:checked + .checkmark::after {
+  display: block;
+  left: 5px;
+  top: 1px;
+  width: 4px;
+  height: 8px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.select{
+    padding: 0.5rem;
+  box-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.25);
+  max-width: 100px;
+  border-radius: 5px;
+}
+
+.button{
+    background-color: #c81616;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-size: .9375rem;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.25);
+    transition: .3s;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: #444444;
+    box-shadow: 0.125rem 0.125rem 0.25rem rgba(200, 22, 22, 0.25)
+}   
+
+

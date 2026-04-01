@@ -1,0 +1,43 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.nav a {
+  margin: 1.5rem;
+  font-size: 1.5rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #c81616;
+  text-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 1rem;
+  }
+
+  .nav a {
+    font-size: 1.1rem;
+    margin: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav {
+    align-items: center;
+  }
+
+  .nav a {
+    font-size: 1rem;
+    margin: 0.4rem;
+  }
+}

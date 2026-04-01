@@ -1,0 +1,31 @@
+.box {
+  background: linear-gradient(90deg, #fff 26%, #f4f0f0 72%);
+  box-shadow:
+    0 0 0 0.5px rgba(0, 0, 0, 0.1),
+    0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 34.375rem;
+  height: 100%;
+  border-radius: 10px;
+  padding: 1rem 2rem;
+}
+
+.links {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.links a {
+  font-size: 0.9375rem;
+  color: #c81616;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+}
+
+.activeLink {
+  text-decoration: underline;
+  color: #c81616;
+  text-decoration-color: #c81616;
+  text-decoration-thickness: 0.125rem;
+}
