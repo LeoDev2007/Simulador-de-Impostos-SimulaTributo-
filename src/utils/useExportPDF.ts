@@ -135,7 +135,7 @@ export function useExportPDF() {
       y += 4;
     });
 
-    doc.save("simulation-history.pdf");
+    doc.save("simulação-historico.pdf");
   };
 
   return { exportPDF };
