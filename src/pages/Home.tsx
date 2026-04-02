@@ -49,14 +49,14 @@ const Home = () => {
             <p className={styles.item1}>INSS: {resultIR.inss.toLocaleString('pt-BR', { style: "currency", currency: "BRL" })}</p>
             <p className={styles.item2}>IR: {resultIR.ir.toLocaleString('pt-BR', { style: "currency", currency: "BRL" })}</p>
             <p className={styles.item3}>
-              Salário Líquido: R${resultIR.netSalary.toLocaleString('pt-BR', { style: "currency", currency: "BRL" })}
+              Salário Líquido:{resultIR.netSalary.toLocaleString('pt-BR', { style: "currency", currency: "BRL" })}
             </p>
           </div>
         )}
 
         {lastCalculation === "ICMS" && resultICMS && (
           <div className={styles.resultBox}>
-            <p>Valor da Alíquota: R${resultICMS.rate}</p>
+            <p>Valor da Alíquota: {resultICMS.rate.toLocaleString('pt-BR', { style: "currency", currency: "BRL" })}</p>
             <p>Alíquota: {resultICMS.ratePercent.toFixed(1)}%</p>
             <p>ICMS: {resultICMS.icms.toLocaleString('pt-BR', { style: "currency", currency: "BRL" })}</p>
             <p>Valor Líquido: {resultICMS.valueWithoutICMS.toLocaleString('pt-BR', { style: "currency", currency: "BRL" })}</p>
@@ -71,7 +71,7 @@ const Home = () => {
 
         {lastCalculation === "IPVA" && resultIPVA && (
           <div className={styles.resultBox}>
-            <p>Valor do Veículo: R$ {resultIPVA.vehicleValue.toLocaleString('pt-BR', { style: "currency", currency: "BRL" })}</p>
+            <p>Valor do Veículo: {resultIPVA.vehicleValue.toLocaleString('pt-BR', { style: "currency", currency: "BRL" })}</p>
             <p>Alíquota: {resultIPVA.rate.toFixed(2)}%</p>
             <p>IPVA: {resultIPVA.ipva.toLocaleString('pt-BR', { style: "currency", currency: "BRL" })}</p>
             <p>Valor Líquido: {resultIPVA.netValue.toLocaleString('pt-BR', { style: "currency", currency: "BRL" })}</p>
