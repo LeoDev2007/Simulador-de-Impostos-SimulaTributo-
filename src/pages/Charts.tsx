@@ -88,7 +88,7 @@ const Charts = () => {
             <Legend />
           </PieChart>
         </ResponsiveContainer>
-        <p>Gráfico baseado na última simulação</p>
+        <p>Gráfico — {last.type}</p>
       </div>
     </div>
   )

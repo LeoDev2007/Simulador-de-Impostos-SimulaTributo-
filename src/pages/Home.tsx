@@ -46,10 +46,10 @@ const Home = () => {
 
         {lastCalculation === "IR" && resultIR && (
           <div className={styles.resultBox}>
-            <p className={styles.item1}>INSS: R${resultIR.inss.toFixed(2)}</p>
-            <p className={styles.item2}>IR: R${resultIR.ir.toFixed(2)}</p>
+            <p className={styles.item1}>INSS: {resultIR.inss.toLocaleString('pt-BR', { style: "currency", currency: "BRL" })}</p>
+            <p className={styles.item2}>IR: {resultIR.ir.toLocaleString('pt-BR', { style: "currency", currency: "BRL" })}</p>
             <p className={styles.item3}>
-              Salário Líquido: R${resultIR.netSalary.toFixed(2)}
+              Salário Líquido: R${resultIR.netSalary.toLocaleString('pt-BR', { style: "currency", currency: "BRL" })}
             </p>
           </div>
         )}
@@ -58,8 +58,8 @@ const Home = () => {
           <div className={styles.resultBox}>
             <p>Valor da Alíquota: R${resultICMS.rate}</p>
             <p>Alíquota: {resultICMS.ratePercent.toFixed(1)}%</p>
-            <p>ICMS: R$ {resultICMS.icms.toFixed(2)}</p>
-            <p>Valor Líquido: R$ {resultICMS.valueWithoutICMS.toFixed(2)}</p>
+            <p>ICMS: {resultICMS.icms.toLocaleString('pt-BR', { style: "currency", currency: "BRL" })}</p>
+            <p>Valor Líquido: {resultICMS.valueWithoutICMS.toLocaleString('pt-BR', { style: "currency", currency: "BRL" })}</p>
             <p>
               Tipo:{" "}
               {resultICMS.operation === "internal"
@@ -71,10 +71,10 @@ const Home = () => {
 
         {lastCalculation === "IPVA" && resultIPVA && (
           <div className={styles.resultBox}>
-            <p>Valor do Veículo: R$ {resultIPVA.vehicleValue.toFixed(2)}</p>
+            <p>Valor do Veículo: R$ {resultIPVA.vehicleValue.toLocaleString('pt-BR', { style: "currency", currency: "BRL" })}</p>
             <p>Alíquota: {resultIPVA.rate.toFixed(2)}%</p>
-            <p>IPVA: R$ {resultIPVA.ipva.toFixed(2)}</p>
-            <p>Valor Líquido: R$ {resultIPVA.netValue.toFixed(2)}</p>
+            <p>IPVA: {resultIPVA.ipva.toLocaleString('pt-BR', { style: "currency", currency: "BRL" })}</p>
+            <p>Valor Líquido: {resultIPVA.netValue.toLocaleString('pt-BR', { style: "currency", currency: "BRL" })}</p>
             <p>Tipo de Veículo: {resultIPVA.vehicleType}</p>
           </div>
         )}
